@@ -13,11 +13,12 @@ std::string get_file_contents(const char* filename);
 
 class Shader
 {
-	GLuint ID;
-	Shader(const char* vertexFile, const char* fragmentFIle);
+	public: 
+		GLuint ID;
+		Shader(const char* vertexFile, const char* fragmentFIle);
 
-	void Activate();
-	void Delete();
+		void Activate();
+		void Delete();
 };
 
 
